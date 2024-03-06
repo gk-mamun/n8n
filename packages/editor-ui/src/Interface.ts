@@ -312,7 +312,7 @@ export interface IWorkflowsShareResponse {
 	id: string;
 	createdAt: number | string;
 	updatedAt: number | string;
-	sharedWith?: Array<Partial<IUser>>;
+	sharedWithProjects?: Array<Omit<Project, 'relations'>>;
 	ownedBy?: Partial<IUser>;
 }
 
